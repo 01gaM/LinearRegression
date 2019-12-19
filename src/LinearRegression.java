@@ -1,9 +1,7 @@
 import org.knowm.xchart.*;
 import org.knowm.xchart.style.Styler;
-import org.knowm.xchart.style.lines.SeriesLines;
 import org.knowm.xchart.style.markers.SeriesMarkers;
 
-import java.awt.*;
 
 public class LinearRegression {
 
@@ -111,11 +109,11 @@ public class LinearRegression {
         System.out.println("Датасет с шумом:");
         printDataSet(dataSetX, noiseDataSetY, dataSetSize);
 
-        System.out.println("\nЗначение функции эмперического риска до МНК: " + q(noiseDataSetY));
+        System.out.println("\nЗначение функции эмпирического риска до МНК: " + q(noiseDataSetY));
 
         setNewModel();
 
-        System.out.println("Значение функции эмперического риска после МНК: " + q(newModelY));
+        System.out.println("Значение функции эмпирического риска после МНК: " + q(newModelY));
 
         showGraph();
     }
